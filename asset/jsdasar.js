@@ -101,7 +101,7 @@ if (pesan) {
 
 // perulangan 
 document.write('<h2>Perulangan</h2>')
-for (let i = 1; i < 7; i++){
-    document.write('halo')
+for (let i = 1; i < 6; i++){
+    document.write('Hai')
     document.write('<br>')
 }
