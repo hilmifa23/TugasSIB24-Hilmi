@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <link rel="stylesheet" href="asset/css/forminput.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="asset/img/logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productapi.html">Daftar Produk</a></li>
+                <li><a href="forminputproduk.html">Input Produk</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-input">
+        <h1>Input Produk</h1>
+        <form id="produkForm">
+            <p>Nama</p>
+            <input type="text" id="nama_produk" name="nama_produk" placeholder="Masukkan Nama Produk" required>
+            <p>Gambar Produk</p>
+            <input type="text" id="gambar_produk" name="gambar_produk" placeholder="Masukkan Link Gambar" required>
+            <p>Deskripsi</p>
+            <input type="text" id="deskripsi_produk" name="deskripsi_produk" placeholder="Masukkan Deskripsi Produk" required>
+            <p>Harga</p>
+            <input type="text" id="harga_produk" name="harga_produk" placeholder="Masukkan Harga Produk" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+<script src="asset/js/request.js"></script>
+</html>

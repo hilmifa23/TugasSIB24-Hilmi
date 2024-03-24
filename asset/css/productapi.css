@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar img {
+  width: 30px; /* Adjusted the image width for better visibility */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  transition: color 0.3s;
+  position: relative; /* Added relative positioning */
+}
+
+.navbar ul li a:hover {
+  color: orangered;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjusted the position of the underline */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: orangered;
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease; /* Added transition for underline */
+}
+
+.navbar ul li a:hover::after {
+  transform: scaleX(1); /* Show underline on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px; /* Adjust card width as needed */
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-container button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #2980b9;
+  }
+  
