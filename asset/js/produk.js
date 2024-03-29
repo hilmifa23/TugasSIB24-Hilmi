@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
   try {
-    const response = await fetch('https://crudcrud.com/api/6a28e3586abe43e7a49eb3cde49c3d04/productapi');
+    const response = await fetch('https://crudcrud.com/api/e9eb48f332bd49d99c2cd52e7464767a/productapi');
     const data = await response.json();
 
     if (!response.ok) {
